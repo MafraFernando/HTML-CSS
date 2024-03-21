@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outras formatações</title>
+</head>
+<body>
+    <h1>Outras formatações</h1>
+    <h2>Código-fonte / Pré-formatação</h2>
+    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript. <mark>Usado a tag &lt code &gt para tornar monoespaçada</mark></p>
+    <pre> <!-- serve para identação-->
+        <code> <!-- tag usada para fonte monoespaçada -->
+        num = int(input('Digite um número'))
+        if num % 2 == 0:
+            print(f'O número {num} é PAR')
+        else:
+            print(f'O número {num} é ÍMPAR)    
+        print('Fim do programa')        
+    </code>
+</pre>
+    <p> o Código acima foi utilizado a tag <mark>&lt pre &gt</mark> para que o mesmo seja feito a identação conforme código</p>
+    <h2>Citações simples</h2>
+    <p>Como diria o pai de um amigo: <q> o computador é um burro muito rápido</q> <mark> usar citações use a tag &lt q &gt</mark> para aspas</p>
+    
+    <h2>Citações completas</h2>
+    <p>Segundo Jeff Noble, no seu livro HTML para leigos:</p>
+    <blockquote cite="pode colocar a URL do site onde foi retirado a citação">A diferença entre elementos inline e um bloco de texto é importante. Os elementos HTML neste capítulo descrevem os blocos de texto.</blockquote>
+    <p>a tag <mark>&lt blockquote &gt</mark> serve para fazer uma citação onde o texto fica identado. pode se utilizar juntamente com a tag <mark>&lt cite &gt</mark> para realizar a referência mesmo que não tenha intereção com o site, apenas de busca</p>
+
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr>e <abbr title="Cascading Style Sheets">CSS. Estou adorando!</abbr></p>
+    <p>Estas abreviações são utilizadas para pousar o mouse e aparecer o nome completo, usando a tag &lt abbr title="" &gt</p>
+
+    <h2>Texto invertido</h2>
+    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <p>Esta sendo a tag mais inútil serve para inverter a ordem do texto <mark>&lt bdo dir="rtl" &gt</mark></p>
+    
+</body>
+</html>

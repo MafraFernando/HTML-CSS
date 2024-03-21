@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peso, estilo e shorthand</title>
+    <style>
+        body {
+            font-family: 'Work Sans', Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            font-weight: normal;
+            font-style: italic; 
+            /* lighter, normal, bold ou bolder */
+
+        }
+        h1 {
+            
+            /*shorthand font
+            - font-style -> font-weight -> font-size -> font-family
+
+            font-family: 'work sans', sans-serif;
+            font-weight: bolder; 
+            font-size: 3em;
+            font-style: italic
+            */
+             font: italic bolder 3em 'Work Sans', sans-serif; 
+        }
+
+        h2 {
+            font: bold 2em 'Work Sans';
+        }
+    </style>
+</head>
+<body>
+    <h1>Peso, estilo e shorthand</h1>
+    <p>font-family: 'Work Sans', Arial, Helvetica, sans-serif; <br>
+        font-size: 1em; <br>
+        font-weight: normal; <br>
+        font-style: italic;  <br>
+        /* lighter, normal, bold ou bolder */</p>
+    <h2>Shorthand</h2>
+    <p>Seguir a seguinte sequência: </p>
+    <p>font-style -> font-weight -> font-size -> font-family </p>
+    <p>ficando assim:</p>
+    <p><mark>font: italic bolder 3em 'Work Sans', sans-serif;</mark></p>
+    
+</body>
+</html>

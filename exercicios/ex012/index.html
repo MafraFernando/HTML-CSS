@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <video width="500" poster="imagens/capadovideo.jpg" controls autoplay loop>
+       <source src="midia/gatinho-720-mp4.mp4" type="video/mp4">
+       <source src="midia/gatinho-webm.webm" type="video/webm">
+       <p>Seu navegador não tem compatibilidde com reprodução de vídeos</p>
+    </video>
+    <h2>Segue abaixo o código, sempre colocar na ordem que deseja ser exibido o arquivo primeiro</h2>
+    <code>
+        &ltvideo width="500" poster="imagens/capadovideo.jpg" controls autoplay loop&gt <br>
+            &ltsource src="midia/gatinho-720-mp4.mp4" type="video/mp4"&gt <br>
+            &ltsource src="midia/gatinho-webm.webm" type="video/webm"&gt <br>
+            &ltp&gtSeu navegador não tem compatibilidde com reprodução de vídeos&lt/p&gt <br>
+         &lt/video&gt
+
+    </code>
+    
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="500" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=5ROETr2B_zmYzgwk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe title="vimeo-player" src="https://player.vimeo.com/video/586822681?h=9dc3f5c2b0" width="500" height="360" frameborder="0"    allowfullscreen></iframe>
+</body>
+</html>

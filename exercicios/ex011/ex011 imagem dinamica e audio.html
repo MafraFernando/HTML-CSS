@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    <h2>O código todo será exibido abaixo, respeitar a ordem do menor para o maior</h2>
+     <code>  &ltpicture&gt <br>
+        &ltsource media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"&gt
+        &ltsource media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png"&gt
+        &ltimg src="imagens/foto-g.png" alt="Imagem flexível"&gt
+    &lt/picture&gt  </code>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+    <audio src="midia/little-umbrellas-tracktribe.mp3" controls autoplay></audio>
+<!-- A maneira acima não funciona em todo navegador -->
+<p>Na linha abaixo temos opções para diferentes navegadores com formato de áudio em MP3, Wav e OGG</p>
+<audio preload="auto" autoplay controls>
+    <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+    <source src="midia/guanacast-33.wav" type="audio/wav">
+    <source src="midia/guanacast-33.ogg" type="audio/ogg">
+    <p>Infelizmente seu navegador não consegue reproduzir áudio.</p>
+    <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+
+</audio>
+<p>Sempre colocar os áudios em ordem de que quer que carregue primeiro e é recomendado não utilizar WAV pois é mais pesado</p>
+<code>
+    &ltaudio preload="auto" autoplay controls&gt <br>
+        &ltsource src="midia/guanacast-33.mp3" type="audio/mpeg"&gt <br>
+        &ltsource src="midia/guanacast-33.wav" type="audio/wav"&gt <br>
+        &ltsource src="midia/guanacast-33.ogg" type="audio/ogg"&gt <br>
+        &ltp&gtInfelizmente seu navegador não consegue reproduzir áudio.&lt/p&gt <br>
+        &lta href="midia/guanacast-33.mp3"&gtClique aqui para baixar o arquivo MP3&lt/a&gt
+    
+    &lt/audio&gt
+
+</code>
+</body>
+</html>
