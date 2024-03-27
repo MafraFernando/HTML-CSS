@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
-            height: 100vh;
-            background-color: black;
+             height: 100vh;
+            /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* Shorthand - background
+            color > image > position > repeat > [size] > attachment 
+            size não funciona até o momento na shorthand apesar de constar no documento oficial que funciona */
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
             background-size: cover;
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
@@ -28,6 +36,15 @@
     <main>
         <h1>Teste de imagem de fundo</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus cumque ipsam assumenda laboriosam veritatis natus consequatur dolor? Corrupti officiis eius nisi laboriosam iure nulla, aliquam voluptate deleniti nesciunt
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorem voluptates molestias harum molestiae magni maiores eos temporibus ut quod voluptas necessitatibus, beatae consequuntur esse qui sed numquam fugiat? Suscipit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil minima perspiciatis vero voluptatibus alias quis laboriosam veniam modi, ipsa totam ex, ipsam, voluptatem reprehenderit? Unde excepturi ab iste culpa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus cumque ipsam assumenda laboriosam veritatis natus consequatur dolor? Corrupti officiis eius nisi laboriosam iure nulla, aliquam voluptate deleniti nesciunt
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorem voluptates molestias harum molestiae magni maiores eos temporibus ut quod voluptas necessitatibus, beatae consequuntur esse qui sed numquam fugiat? Suscipit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil minima perspiciatis vero voluptatibus alias quis laboriosam veniam modi, ipsa totam ex, ipsam, voluptatem reprehenderit? Unde excepturi ab iste culpa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus cumque ipsam assumenda laboriosam veritatis natus consequatur dolor? Corrupti officiis eius nisi laboriosam iure nulla, aliquam voluptate deleniti nesciunt
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorem voluptates molestias harum molestiae magni maiores eos temporibus ut quod voluptas necessitatibus, beatae consequuntur esse qui sed numquam fugiat? Suscipit.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil minima perspiciatis vero voluptatibus alias quis laboriosam veniam modi, ipsa totam ex, ipsam, voluptatem reprehenderit? Unde excepturi ab iste culpa?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, temporibus cumque ipsam assumenda laboriosam veritatis natus consequatur dolor? Corrupti officiis eius nisi laboriosam iure nulla, aliquam voluptate deleniti nesciunt
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate dolorem voluptates molestias harum molestiae magni maiores eos temporibus ut quod voluptas necessitatibus, beatae consequuntur esse qui sed numquam fugiat? Suscipit.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nihil minima perspiciatis vero voluptatibus alias quis laboriosam veniam modi, ipsa totam ex, ipsam, voluptatem reprehenderit? Unde excepturi ab iste culpa?
         </p>
