@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de exercício</title>
+    <style>
+        body {
+            background-color: burlywood;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            border: 5px solid rgb(18, 56, 47);
+            text-align: right;
+            
+        } 
+
+        tr.linha {
+            background-color: rgb(214, 214, 120);
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 15px;
+            
+        }
+
+        td.lucro60 {
+            background-color: green;
+        }
+
+        td.lucro50 {
+            background-color: lightgreen;
+        }
+
+        td.lucro-50 {
+            background-color: firebrick;
+        }
+
+        .produto {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabela de exercício, produto, custo, venda e lucro</h1>
+    <table>
+        <tr>
+            <td class="produto">primeiro produto</td>
+            <td>custo</td>
+            <td>venda</td>
+            <td class="lucro60">lucro</td>
+        </tr>
+        <tr class="linha">
+            <td class="produto">segundo produto</td>
+            <td>custo</td>
+            <td>venda</td>
+            <td class="lucro-50">lucro</td>
+        </tr>
+        <tr>
+            <td class="produto">terceiro produto</td>
+            <td>custo</td>
+            <td>venda</td>
+            <td class="lucro50">lucro</td>
+        </tr>
+        <tr>
+            <td class="produto">quarto produto</td>
+            <td>custo</td>
+            <td>venda</td>
+            <td class="lucro60">lucro</td>
+        </tr>
+    </table>
+</body>
+</html>
