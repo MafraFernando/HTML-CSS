@@ -9,11 +9,12 @@
             background-color: burlywood;
         }
 
-        table {
+        table, thead {
             border-collapse: collapse;
             width: 500px;
             border: 5px solid rgb(18, 56, 47);
-            text-align: right;
+            text-align: center;
+           
             
         } 
 
@@ -21,56 +22,83 @@
             background-color: rgb(214, 214, 120);
         }
 
-        td {
+        td, th {
             border: 1px solid black;
             padding: 15px;
             
         }
+        th {
+            font-size: 1.3em;
+            background-color: rgba(107, 51, 26, 0.253);
+        }
 
         td.lucro60 {
             background-color: green;
+            text-align: right;
+            
         }
 
         td.lucro50 {
             background-color: lightgreen;
+            text-align: right;
         }
 
         td.lucro-50 {
             background-color: firebrick;
+            text-align: right;
         }
 
-        .produto {
-            text-align: center;
+        
+        .num {
+            text-align: right;
+        }
+
+        .total {
+            background-color: rgba(107, 51, 26, 0.253);
         }
     </style>
 </head>
 <body>
     <h1>Tabela de exercício, produto, custo, venda e lucro</h1>
     <table>
+        <thead>
+            <tr>
+                <th scope="col">Produto</th>
+                <th scope="col" style="width: 50px;">Custo</th>
+                <th scope="col" style="width: 50px;">Venda</th>
+                <th scope="col" style="width: 50px;">Lucro</th>
+            </tr>
+        </thead>
         <tr>
             <td class="produto">primeiro produto</td>
-            <td>custo</td>
-            <td>venda</td>
+            <td class="num">custo</td>
+            <td class="num">venda</td>
             <td class="lucro60">lucro</td>
         </tr>
         <tr class="linha">
             <td class="produto">segundo produto</td>
-            <td>custo</td>
-            <td>venda</td>
+            <td class="num">custo</td>
+            <td class="num">venda</td>
             <td class="lucro-50">lucro</td>
         </tr>
         <tr>
             <td class="produto">terceiro produto</td>
-            <td>custo</td>
-            <td>venda</td>
+            <td class="num">custo</td>
+            <td class="num">venda</td>
             <td class="lucro50">lucro</td>
         </tr>
         <tr>
             <td class="produto">quarto produto</td>
-            <td>custo</td>
-            <td>venda</td>
+            <td class="num">custo</td>
+            <td class="num">venda</td>
             <td class="lucro60">lucro</td>
         </tr>
+        <tfoot>
+            <th scope="row">Total</th>
+            <td class="total">0000</td>
+            <td class="total">0000</td>
+            <td class="total">0000</td>
+        </tfoot>
     </table>
 </body>
 </html>
