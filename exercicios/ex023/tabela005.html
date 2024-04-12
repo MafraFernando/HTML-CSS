@@ -23,11 +23,35 @@
             padding: 8px;
             text-align: center;
         }
+
+        .destaque {
+            background-color: chartreuse;
+        }
+       col.cgrupo {
+        background-color: chartreuse;
+       }
+       .red {
+        background-color: red;
+       }
+       .yellow {
+        background-color: yellow;
+       }
     </style>
 </head>
 <body>
     <h1>Exercício de Tabelas</h1>
     <table>
+         <colgroup> 
+            <col class="yellow">
+            <col class="red">
+            <col class="yellow">
+            <col class="red">
+        </colgroup>
+       <!-- <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2">
+            <col class="cprof">
+        </colgroup>-->
         <caption>Cadastro</caption>
         <tr>
             <th scope="col">Nome</th>
