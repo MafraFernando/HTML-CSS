@@ -1,0 +1,31 @@
+/* Cores utilizadas: 
+
+​#f1c40f -> Amarelo
+#2c3e50 -> Azul
+#e74c3c -> Vermelho */
+
+body {
+    background-color: #2c3e50; 
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    background-color: #f1c40f;
+    border: 2px solid black;
+}
+
+h3 {
+    color: #f1c40f;
+}
+
+ul > li {
+    color: white;
+}
+
+#astronomy-class {
+    color: #e74c3c;
+}
+
